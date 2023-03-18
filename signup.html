@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>SIGNUP FORM</h2>
+            <form role="form" onsubmit="signUp(event);" autocomplete>
+                <div class="form-group">
+                    <input type="text" name="fname" id="fname" placeholder="Temesgen" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="lname" id="lname" placeholder="Teferi">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="temesgrntt2345@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="pwd" id="pwd" placeholder="987564@$age" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+            <p>Already have an account? <a href="index.html" id="sign">Sign In</a></p>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

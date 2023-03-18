@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Streaming Schedule for AMICO</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">
+                <span id="name">
+                    <b>Amhara media corporation</b>
+            </h2>
+
+            <button class="logout"><a href="index.html" id="loglink">Logout</a>
+            </button>
+        </section>
+        <section class="create-schedule">
+            <h3>Create Schedule</h3>
+            <form id="new-schedule-form">
+                <h4>
+                    What's to be streamed today
+                </h4>
+                <input type="text" name="content" id="content" placeholder="e.g.Fnote gafat" />
+                <h4>
+                    Pick a channel
+                </h4>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="category" id="category1" value="television">
+                        <span class="bubble television"> </span>
+                        <div>Television</div>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="category" id="category2" value="radio">
+                        <span class="bubble radio"></span>
+                        <div>Radio</div>
+                    </label>
+                </div>
+                <input type="submit" value="Add Program">
+            </form>
+        </section>
+        <section class="schedule-list">
+            <h3>Schedule List</h3>
+            <div class="list" id="schedule-list">
+
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
